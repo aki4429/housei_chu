@@ -20,7 +20,9 @@ a {
     }
 }
 .navbar {
+    display: rela;  
     width:90%;
+    background-attachment: fixed; /*固定*/
     display: flex;
     background-color: $nav-color;
     justify-content: space-between;
@@ -73,25 +75,22 @@ a {
     margin-left:5px;
     display: flex; 
     justify-content: space-around;
-    justify-content: space-between;
     text-align: center;
     flex-wrap: wrap;
-    &-item {
-    }
     &-title {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
         font-size: 24px;
         padding:15px;
+        margin-bottom: 15px;
     }
     &-item {
-        width: 33%;
+        width: 30%;
     }
     &-img {
-        width: 300px;
-        margin-top: 15px;
     background-color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 10px;
     }
     &-exp {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.6);
     }
   }
