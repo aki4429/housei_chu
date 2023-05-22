@@ -1,0 +1,64 @@
+<!-- {% load static %} -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+        <!-- <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'> -->
+        <link rel="stylesheet" href="{% static 'css/reset.css' %}"> 
+        <link rel="stylesheet" href="{% static 'css/style.css' %}"> 
+        <title>豊正中学校1974年度卒業生同窓会</title>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="nav-item">
+		    {% if 'home' in request.path %} 
+            <a class='navbar-title current' href='{% url "bbs:home" %}'> ホーム </a>
+	    {% else %}
+            <a class='navbar-title' href='{% url "bbs:home" %}'> ホーム </a>
+	    {% endif %}
+
+            </div>
+            <ul class='navbar-nav'>
+                    <li class='nav-time'>
+                        <span class='navbar-login'>ログイン中:{{ user }} - </span>
+                    </li>
+                    <li class='nav-item'>
+		    {% if 'logout' in request.path %} 
+                        <a href='{% url "logout" %}' class='logout current'>ログアウト</a>
+	    		{% else %}
+                        <a href='{% url "logout" %}' class='logout'>ログアウト</a>
+	    		{% endif %}
+                    </li>
+                    <li class="nav-item">
+		    {% if 'signup' in request.path %} 
+			<a href='{% url "accounts:signup" %}' class='signup current'>ユーザー登録</a>
+	    		{% else %}
+			<a href='{% url "accounts:signup" %}' class='signup'>ユーザー登録</a>
+	    		{% endif %}
+                    </li>
+                    <li class="nav-item">
+                        <a href='{% url "login" %}' class='login'>ログイン</a>
+                    </li>
+            </ul>
+        </nav>
+        <div class='container'>
+            {% block content %}
+            {% endblock %}
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script type="text/javascript">$(function(){
+    $('.nav-item > a').each(function(){
+      var target = $(this).attr('href');
+      if(location.href.match(target)) {
+        $(this).parent().addClass('current');
+      } else {
+        $(this).parent().removeClass('current');
+      }
+    });
+  });
+
+</script>
+</body>
+</html>

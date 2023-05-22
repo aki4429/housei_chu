@@ -1,0 +1,113 @@
+@charset "UTF-8";
+body {
+  background-color: rgb(255, 255, 255);
+  color: #2a333b;
+  line-height: 1.5;
+  background-image: url("/static/img/housei-chugaku-gaqzo_2.jpg");
+  background-position: center center; /* 縦横中央 */
+  background-size: cover; /* 全画面 */
+  background-attachment: fixed; /*固定*/
+  background-repeat: no-repeat;
+  font-family: "Noto Sans JP", "sans-serif", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(56, 54, 54);
+}
+a:hover {
+  opacity: 0.7;
+}
+
+.navbar {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #9BD3CA;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 30px;
+}
+.navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.navbar-title {
+  font-size: 16px;
+}
+.navbar-login {
+  color: green;
+  font-size: 12px;
+}
+
+.nav-item {
+  display: block;
+}
+
+.current {
+  color: rgb(255, 255, 255);
+}
+
+.top {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 90%;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+.top-title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 36px;
+  color: #9BD3CA;
+}
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contents {
+  margin-top: 350px;
+  margin-right: 5px;
+  margin-left: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.contents-title {
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 24px;
+  padding: 15px;
+}
+.contents-item {
+  width: 33%;
+}
+.contents-img {
+  width: 300px;
+  margin-top: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.contents-exp {
+  background-color: rgba(255, 255, 255, 0.5);
+}

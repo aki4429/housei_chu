@@ -1,0 +1,97 @@
+$nav-color:#9BD3CA;
+
+$bg-color:rgb(255,255,255);
+body{
+    background-color: $bg-color;
+    color:  #2a333b;
+    line-height: 1.5;
+    background-image: url("/static/img/housei-chugaku-gaqzo_2.jpg");
+    background-position:center center; /* 縦横中央 */
+    background-size:cover;  /* 全画面 */
+    background-attachment: fixed; /*固定*/
+    background-repeat: no-repeat;
+    font-family: 'Noto Sans JP', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: rgb(56, 54, 54);
+    &:hover{
+        opacity: 0.7;
+    }
+}
+.navbar {
+    width:90%;
+    display: flex;
+    background-color: $nav-color;
+    justify-content: space-between;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 30px ;
+    &-nav {
+        display: flex;
+        width:50%;
+        justify-content: space-around;
+    }
+    &-title {
+        font-size: 16px;
+    }
+    &-login {
+        color: green;
+        font-size: 12px;
+    }
+}
+.nav-item {
+    display: block;
+}
+.current {
+    color:$bg-color;
+}
+.top {
+    background-color: rgba(255,255,255,0.8);
+    width: 90%;
+    margin-top:10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:25px ;
+    padding-bottom:50px ;
+    &-title {
+        text-align: center;
+        font-weight: 600;
+        font-size: 36px;
+        color:$nav-color;
+    }
+}
+.container {
+    width:90% ;
+    margin-left:auto;
+    margin-right:auto;
+}
+.contents {
+    margin-top:350px;
+    margin-right:5px;
+    margin-left:5px;
+    display: flex; 
+    justify-content: space-around;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+    &-item {
+    }
+    &-title {
+    background-color: rgba(255, 255, 255, 0.5);
+        font-size: 24px;
+        padding:15px;
+    }
+    &-item {
+        width: 33%;
+    }
+    &-img {
+        width: 300px;
+        margin-top: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    }
+    &-exp {
+    background-color: rgba(255, 255, 255, 0.5);
+    }
+  }
